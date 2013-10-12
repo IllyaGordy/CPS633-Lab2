@@ -1,4 +1,9 @@
-/* C program to create an identity matrix of n x n order */
+/* 
+ * This is a sample program to get some ideas flowing
+ *
+ *
+ * C program to create an identity matrix of n x n order 
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
