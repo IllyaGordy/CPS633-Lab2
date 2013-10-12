@@ -24,7 +24,12 @@ void changeUser(char *user); // separate the password in to three and hash each 
 void clearInputStream(char *in); //make sure all the processe that are going in to stadard io are good
 
 
-
+/*
+ * Most of the stuff are done in the main class for now
+ * ToDo: split in to more reuasable classes
+ *
+ *
+ */
 int main(int argc, char *argv[]) { //start of app
     int i,j;
     
@@ -51,7 +56,8 @@ int main(int argc, char *argv[]) { //start of app
     };
     int num_objects = 7;
     
-    char *matrix[USERS][OBJECTS] = {
+    //set up a matrix of user privilages, set it for read/write at first
+    char *privileges_matrix[USERS][OBJECTS] = {
         {"rw", "rw", "rw", "rw", "rw", "rw", "rw"},
         {"rw", "rw", "rw", "rw", "rw", "rw", "rw"},
         {"rw", "rw", "rw", "rw", "rw", "rw", "rw"},
@@ -59,7 +65,7 @@ int main(int argc, char *argv[]) { //start of app
     
     for(i = 0; i < USERS; i++){
         for(j = 0; j < OBJECTS; j++){
-            printf("matrix[%s][%s] is %s\n", users[i], objects[j], matrix[i][j]);
+            printf("privileges_matrix[%s][%s] is %s\n", users[i], objects[j], privileges_matrix[i][j]);
         }
     }
     
@@ -80,11 +86,12 @@ int main(int argc, char *argv[]) { //start of app
 	}
     
     
+    //Go thought the matrix is the user is matched then change the privalges to "w" for now
     for (i = 0; i < USERS; i++) {
         printf("temp_user: %s; user[%d]: %s \n", temp_user, i, users[i]);
         if(strcmp(temp_user, users[i]) == 0){
             for (j=0; j < OBJECTS; j++) {
-                matrix[i][j] = "w";
+                privileges_matrix[i][j] = "w";
             }
         }
     }
@@ -110,28 +117,27 @@ int main(int argc, char *argv[]) { //start of app
     printf("Object is: %s", temp_object); //print username
     
     
+    //Go thought the matrix is the object is matched then change the privileges to "r" for now
     for (i = 0; i < OBJECTS; i++) {
         printf("temp_object: %s; object[%d]: %s \n", temp_object, i, objects[i]);
         if(strcmp(temp_object, objects[i]) == 0){
             printf("compared");
             for (j=0; j < USERS; j++) {
-                matrix[j][i] = "r";
+                privileges_matrix[j][i] = "r";
             }
         }
     }
     
-    printf("\n");cd 
+    printf("\n");
     
     for(i = 0; i < USERS; i++){
         for(j = 0; j < OBJECTS; j++){
-            printf("matrix[%s][%s] is %s\n", users[i], objects[j], matrix[i][j]);
+            printf("privileges_matrix[%s][%s] is %s\n", users[i], objects[j], privileges_matrix[i][j]);
         }
     }
     
     printf("\n");
     
-    printf("\n");
-
     return 0;
 }
 
