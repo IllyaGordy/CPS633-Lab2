@@ -12,6 +12,12 @@ This readme contains brief descriptions with regards to the functionality of all
 
 **IMPORTANT NOTE** The applications were written on a Linux system (Ubuntu) using a different version of the GCC compiler than that used on the moon.scs.ryerson.ca server. As a result, question 1 and 2 solution works as intended on my Linux VM, but may not function correctly on the Ryerson moon server.
 
+Group members:
+- Daniel Moscuzza
+- Omar Mamiche
+- James Goe
+- Illya Gordiyenko
+
 
 
 (I)			REQUIREMENTS
