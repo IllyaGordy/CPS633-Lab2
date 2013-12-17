@@ -1,4 +1,4 @@
-CPS633
+CPS633 Lab #2
 ======
 
 This is a working project for Lab2 of CPS633 course from Ryerson University.
