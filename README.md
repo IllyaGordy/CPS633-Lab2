@@ -13,11 +13,9 @@ This readme contains brief descriptions with regards to the functionality of all
 
 
 TABLE OF CONTENTS
-------------------------------------------------------------------
-   (I)		REQUIREMENTS
-   (II) 	DESCRIPTIONS
-   (III)	INSTRUCTIONS
-------------------------------------------------------------------
+(I) 	REQUIREMENTS
+(II) 	DESCRIPTIONS
+(III) 	INSTRUCTIONS
 
 
 
