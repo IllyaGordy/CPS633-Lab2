@@ -23,44 +23,33 @@ TABLE OF CONTENTS
 
 
 
-
-==================================================================
 (I)			REQUIREMENTS
-==================================================================
 
 - Pentium CPU or better
 - At least 1GB of RAM
 - At least 10MB of storage space
 - Linux operating system
 
-==================================================================
 (II)			DESCRIPTIONS
-==================================================================
 
 1. Discretionary Access Control (DAC)
 
 The source code containing the solution to this problem can be found in:
-
-DAC.c
-
-==================================================================
+	DAC.c
 
 2. Role-Based Access Control (RBAC)
 
 The source code containing the solution to this problem can be found in:
+	RBAC.c
 
-RBAC.c
-
-==================================================================
 (III)			INSTRUCTIONS
-==================================================================
 
 COMPILING:
 
 To compile the source code provided for questions 1, 2, and 3, enter the following in a linux terminal window:
 
-gcc -o DAC DAC.c
-gcc -o RBAC RBAC.c
+	gcc -o DAC DAC.c
+	gcc -o RBAC RBAC.c
 
 	EXAMPLE:
 
@@ -74,5 +63,3 @@ gcc -o RBAC RBAC.c
 USING THE APPLICATIONS:
 
 The applications will prompt the user for input.
-
-------------------------------------------------------------------
